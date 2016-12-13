@@ -6,7 +6,9 @@ tags:
 ---
 
 ### 这是一个取消qq账号对其他网站，app的授权的链接！ https://connect.qq.com/manage.html#/appauth/user 
-但是直接在qq或者微信里是打不开的会报错![](/image/2016-12-13-qq_cancel_authority/fail.png)
+但是直接在qq或者微信里是打不开的会报错
+<!--more-->
+![](/image/2016-12-13-qq_cancel_authority/fail.png)
 所以要换个浏览器～亲测 **chrome，safari** 可以，火狐不可以 ，其他的都没试了不清楚。
 然后要重新登录一下 登陆成功界面就如下图
 ![](/image/2016-12-13-qq_cancel_authority/list.png)
