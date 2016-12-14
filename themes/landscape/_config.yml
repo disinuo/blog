@@ -4,6 +4,8 @@ menu:
   归档: /archives
 rss: /atom.xml
 
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: false
 # Content
 excerpt_link: 阅读全文
 fancybox: true
@@ -34,7 +36,7 @@ links:
   丹妮妮: https://chendanni.github.io/
   陈云龙大神~: http://www.cylong.com/
   主题作者: http://xiguabaobao.com
-  热前端: http://reqianduan.com  
+  热前端: http://reqianduan.com
 
 # M
 # Miscellaneous
