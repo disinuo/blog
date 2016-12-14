@@ -24,8 +24,7 @@ git merge dev
 # 合并之后提交线变成一条线，两个分支的head是同一个节点
 ```
 ![](/image/2016-12-14-git_branch_merge/fast.png)
-但这种合并方式不是很好，如果项目比较大的话能不用尽量不用，因为有另一种高级一点的合并方式
-（下面3.3会对比两种方式 ^ ^）
+
 - #### 3.2 Not Fast Forward `--no-ff`
 ![](/image/2016-12-14-git_branch_merge/no-ff.png)
 ```bash
@@ -55,10 +54,10 @@ git merge --no-ff dev
   我还试了一下，两个分支如果相对于分离点都有新节点(就像本文的第一张图)，但是改动的代码没有冲突，git会不会默认使用FF合并。
   亲测不会。而且我还试着加`--ff`参数强制FF合并，也还是执行了NoFF合并~
   就这些吧~等哪天研究一下git提交冲突的再来发文~~
-  
+
 PS：为了测试各种情况，快看我今天github上activity程度哈哈哈~创我历史新高~~~
 ![](/image/2016-12-14-git_branch_merge/github_activity.png)
-************
+***********
 参考：
 [Benjamin Sandofsky的Understanding the Git Workflow](https://sandofsky.com/blog/git-workflow.html)
 [阮一峰的《git分支管理》](http://www.ruanyifeng.com/blog/2012/07/git.html)
