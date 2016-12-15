@@ -2,3 +2,4 @@ public/
 *.log
 node_modules/
 .deploy*/
+.DS_Store
