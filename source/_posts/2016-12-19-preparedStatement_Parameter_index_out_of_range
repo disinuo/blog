@@ -1,0 +1,19 @@
+---
+title: preparedStatement 报错 Parameter index out of range (1 > number of parameters, which is 0)
+date: 2016-12-18 23:26:43
+tags:
+    - sql
+    - jdbc
+---
+###
+有毒！！一直报 Parameter index out of range (1 > number of parameters, which is 0)
+
+然后发现是 ?不能用单引号围起来
+
+但是我没用单引号围起来呀
+
+我只不过sql的查询语句用了字符串追加
+
+所以把他们搞成一个字符串就好了
+
+先睡觉，明天再排版~~
