@@ -11,7 +11,7 @@ tags:
 ### 2.DriverManager用法
 ```java
 // 0.设置数据库url
-static final String url = "jdbc:mysql://localhost:3306/books";
+static final String url = "jdbc:mysql://localhost:3306/myDB";
 // 说明一下~这里是重写了service方法，
 // 于是GET和POST请求都会通过这个方法实现响应
 // 是因为实际上请求都会先经过service方法，
@@ -42,40 +42,41 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 ```
 ### 3.DataSource用法
 - #### 3.1 用resin 容器
-首先要写一个配置文件~
+首先要写一个配置文件~命名为`resin-web.xml`(会覆盖web.xml)，位置就放在名为WebContent的目录下。文件结构如下~
+```
+--WebContent
+----META-INF
+----WEB-INF
+----resin-web.xml
+```
 
 ```xml
 <web-app xmlns="http://caucho.com/ns/resin">
   <!--
-     - Configures the database.
-     - jndi-name specifies the JNDI name
-     - type      specifies the driver class
-     - path      is a driver-specific configuration parameter
+     - 配置数据库.
+     - jndi-name 配置 the JNDI name
+     - type  配置 driver 的class
     -->
- <database>
- <jndi-name>jdbc/mysql</jndi-name>
-  <driver>
-    <type>com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource</type>
-    <url>jdbc:mysql://localhost:3306/books</url>
-    <user>root</user>
-    <password></password>
-  </driver>
+  <database>
+    <jndi-name>jdbc/myDB</jndi-name>
+    <driver>
+      <type>com.mysql.jdbc.Driver</type>
+      <url>jdbc:mysql://localhost:3306/myDB</url>
+      <user>root</user>
+      <password></password>
+    </driver>
   </database>
   <!--
-     - Configures the initialization servlet.  The bean-style init
-     - it used to look up the JNDI DataSource in the configuration file.
+     - 配置servlet。
+     - 查询 JNDI 数据源
     -->
-   <servlet>
+  <servlet>
     <servlet-name>datasource</servlet-name>
-    <servlet-class>com.zetcode.DataSourceExample</servlet-class>
-        <init>
-      <data-source>${jndi:lookup('jdbc/mysql')}</data-source>
+    <servlet-class>com.DataSourceExample</servlet-class>
+    <init>
+      <data-source>${jndi:lookup('jdbc/myDB')}</data-source>
     </init>
   </servlet>
-  <servlet-mapping>
-    <url-pattern>/test</url-pattern>
-    <servlet-name>datasource</servlet-name>
-  </servlet-mapping>
 </web-app>
 ```
 然后，在servlet类里面这样用
@@ -109,9 +110,48 @@ protected void service(HttpServletRequest request,HttpServletResponse response)t
 }
 ```
 - #### 3.2 用tomcat web容器
-
-
+这个相比较于resin，配置文件更简单一点，不过代码里面多了点东西~其实本质就是把
+`jndi:lookup('jdbc/myDB')`从配置文件里移到了代码里。。所以我更喜欢resin那种~
+接下来看看具体怎么写吧^ ^
+配置文件：命名为context.xml，位置如下
+```
+--WebContent
+----META-INF
+------context.xml
+----WEB-INF
+```
+```xml
+<Context>
+  <Resource name="jdbc/myDB" auth="Container" type="javax.sql.DataSource"
+               maxActive="50" maxIdle="30" maxWait="10000" logAbandoned="true"
+               username="root" password=""
+                driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/myDB?autoReconnect=true"/>
+</Context>
+```
+然后，在servlet类里面这样用
+```java
+private DataSource datasource = null;
+public void init() throws ServletException{
+  try {
+// 新引入的三个类
+// javax.naming.Context;
+// javax.naming.InitialContext;
+// javax.naming.NamingException;
+    Context ctx=new InitialContext();
+    datasource= (DataSource) ctx.lookup("java:comp/env/jdbc/myDB");
+  }catch (NamingException e) {
+    System.out.println("Initial Error: "+e);
+    e.printStackTrace();
+  }
+}
+// 然后service跟resin的一样~
+```
 ### 4.DataSource 与 DriverManager的比较
+1. 配置信息：
+Datasource要把url，user，password都写在代码里
+2. 性能：
+Datasource的连接池
 
 ***********
 参考：
