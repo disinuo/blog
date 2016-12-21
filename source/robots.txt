@@ -9,5 +9,5 @@ Disallow: /fonts/
 Disallow: /lib/
 Disallow: /fancybox/
 
-Sitemap: http://disinuo.github.io/sitemap.xml
-Sitemap: http://disinuo.github.io/baidusitemap.xml
+Sitemap: http://disinuo.me/sitemap.xml
+Sitemap: http://disinuo.me/baidusitemap.xml
