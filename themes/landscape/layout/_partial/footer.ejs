@@ -1,13 +1,17 @@
 <footer id="footer">
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <% if (theme.sidebar === 'bottom'){ %>
     <%- partial('_partial/sidebar') %>
   <% } %>
   <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %><%= __('  ^o^ ') %> <%= config.author || config.title %><br>
-      <%= __('由') %> <a href="http://hexo.io/" target="_blank">Hexo</a><%= __(' 强力驱动') %><br><br>
+    <span id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %><%= __('  ^o^ ') %> <%= config.author || config.title %>
+    <!-- <%= __('由') %> <a href="http://hexo.io/" target="_blank">Hexo</a><%= __(' 强力驱动') %><br><br> -->
         <a id="footer_git" class="footer-icon" target="_blank" href="https://github.com/disinuo"></a>
-        <div>由于比较弱鸡还没搞出评论功能。。。所以哪里说的不对希望发邮件给我指出~~谢谢！~dsn960401@gmail.com</div>
-    </div>
+        <span id="busuanzi_container_site_pv">
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        </span>
+    </span>
+
   </div>
 </footer>

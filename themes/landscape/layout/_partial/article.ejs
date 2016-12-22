@@ -23,11 +23,15 @@
       <% } %>
     </div>
     <footer class="article-footer">
+
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
+
       <%- partial('post/tag') %>
+      <span class="counter" id="busuanzi_container_page_pv">本文阅读量 <span id="busuanzi_value_page_pv"></span>次
+    </span>
     </footer>
   </div>
   <% if (!index){ %>
