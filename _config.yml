@@ -10,6 +10,10 @@ author: disinuo
 language: zh-CN
 timezone: #这是干嘛的
 
+# 多说评论功能
+duoshuo_shortname: disinuo # 你填写在多说域名中的值
+# 多说分享服务，必须与多说评论同时使用
+duoshuo_share: true
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://disinuo.me # with the https protocol
