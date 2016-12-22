@@ -39,7 +39,7 @@ git commit -m "branch test"
   我发现如果对某个文件改动，但是不add就切换分支，工作区的改动都是在的（工作区说白了就是本地你看到的代码），即便是add了但不commit就切换分支也依旧如此。
   而且如果你改动了某个文件，在分支A下`git add`，但是在分支B下`git commit`的，最终这个修改是会记录在分支B下的。
   这也算是一定程度上验证了我在[git修改撤销](http://localhost:4000/2016/12/12/2016-12-12-git_note/)那篇文章里画的图^ ^
-  ![](/image/2016-12-12-git-note/git_4_things.png)
+  ![](/image/2016-12-12-git_note/git_4_things.png)
 
   那为什么在分支间的切换，本地的工作区代码会有不同呢？下面说下我的理解：
   add+commit相当于是把改动从工作区【**转移**】到本地版本库的过程,就是说commit之后工作区就clear了。

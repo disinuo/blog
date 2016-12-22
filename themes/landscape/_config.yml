@@ -35,7 +35,7 @@ show_count: true
 links:
   丹妮妮: https://chendanni.github.io/
   陈云龙大神~: http://www.cylong.com/
-  主题作者: http://xiguabaobao.com
+  toast: http://toastsgithub.github.io/
   热前端: http://reqianduan.com
 
 # M
@@ -50,7 +50,3 @@ fb_app_id:
 
 # Baidu share
 #baidushare: true
-
-cnzz_tongji:
-  enable: true
-  siteid: 1260398845

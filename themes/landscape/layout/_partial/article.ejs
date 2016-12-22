@@ -19,6 +19,14 @@
           </p>
         <% } %>
       <% } else { %>
+        <!-- 文章目录 -->
+       <% if (!index && post.toc){ %>
+       <div id="toc" class="toc-article">
+           <strong class="toc-title">文章目录</strong>
+           <%- toc(post.content, {list_number: false}) %>
+       </div>
+       <% } %>
+
         <%- post.content %>
       <% } %>
     </div>
@@ -30,8 +38,9 @@
       <% } %>
 
       <%- partial('post/tag') %>
-      <span class="counter" id="busuanzi_container_page_pv">本文阅读量 <span id="busuanzi_value_page_pv"></span>次
-    </span>
+      <span class="counter" id="busuanzi_container_page_pv" style='display:none'>本文阅读量 <span id="busuanzi_value_page_pv"></span>次</span>
+
+    <div class="post-count counter"><%= wordcount(post.content) %>字</div>
     </footer>
   </div>
   <% if (!index){ %>
