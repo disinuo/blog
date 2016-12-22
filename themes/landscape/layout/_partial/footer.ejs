@@ -1,4 +1,9 @@
 <footer id="footer">
+  <script type="text/javascript">
+    var host = "disinuo.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
   <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <% if (theme.sidebar === 'bottom'){ %>
     <%- partial('_partial/sidebar') %>
