@@ -51,7 +51,7 @@ duoshuo_info:
 # Miscellaneous
 google_analytics: true
 gauges_analytics:
-favicon: /favicon.png
+favicon: /favicon.ico
 twitter:
 google_plus:
 fb_admins:
