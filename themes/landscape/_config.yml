@@ -20,6 +20,7 @@ widgets:
 #- tagcloud
 - archive
 - links
+# - visitor
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -37,7 +38,15 @@ links:
   陈云龙大神~: http://www.cylong.com/
   toast: http://toastsgithub.github.io/
   热前端: http://reqianduan.com
+  # Make duoshuo show UA
+# user_id must NOT be null when admin_enable is true!
+# you can visit http://dev.duoshuo.com get duoshuo user id.
 
+duoshuo_info:
+  ua_enable: true
+  admin_enable: true
+  user_id: disinuo
+  # admin_nickname: 权限汪
 # M
 # Miscellaneous
 google_analytics: true

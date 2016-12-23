@@ -4,12 +4,18 @@
     <%- partial('post/category') %>
   </div>
   <div class="article-inner">
+    <!-- 文章目录 -->
+   <!-- <div id="toc" class="toc-article">
+       <strong class="toc-title">文章目录</strong>
+       <%- toc(post.content,{list_number: false}) %>
+   </div> -->
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
+
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
@@ -19,15 +25,10 @@
           </p>
         <% } %>
       <% } else { %>
-        <!-- 文章目录 -->
-       <% if (!index && post.toc){ %>
-       <div id="toc" class="toc-article">
-           <strong class="toc-title">文章目录</strong>
-           <%- toc(post.content, {list_number: false}) %>
-       </div>
-       <% } %>
+
 
         <%- post.content %>
+        <!-- <%- partial('post/category')%> -->
       <% } %>
     </div>
     <footer class="article-footer">
