@@ -1,12 +1,14 @@
 ---
-title: JavaScript 迷之作用域（一）
+title: JavaScript 变量声明
 date: 2016-12-11 22:38:42
-tags: 
+tags:
     - web
     - javascript
-    - 作用域
 ---
-发现这一块很迷啊。。可能要写好几篇了。。。
+### 更新日志
+2017-01-24 发现名字不太合适。。。改个名字。。。
+
+发现这一块很迷啊。。
 首先来看下问题~
 ```javascript
 var foo = 1;

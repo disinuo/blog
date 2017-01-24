@@ -4,6 +4,8 @@ date: 2017-01-23 20:42:03
 tags:
     - javascript
 ---
+### 更新日志
+2017-01-24 改了下‘封装私有变量’的代码
 ### 1.闭包的概念
 闭包，简单来说就是指那些能够访问另一函数作用域内变量的函数。
 比如最基础的
@@ -84,19 +86,17 @@ console.log(isString('hhh')); //true
 var Person=function(){
     var name='Lily';
     var age=20;
-    return {
-        getName:function(){
-            return name;
-        },
-        addAge:function () {
-            age++;
-        },
-        getAge:function () {
-           return age;
-        }
+    this.getName=function(){
+        return name;
+    };
+    this.addAge=function () {
+        age++;
+    };
+    this.getAge=function () {
+       return age;
     }
 }
-var func=Person();
+var func=new Person();
 console.log(func.name);     //undefined
 console.log(func.getName());//Lily
 func.addAge();
