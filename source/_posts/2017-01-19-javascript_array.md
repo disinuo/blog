@@ -4,11 +4,11 @@ date: 2017-01-19 11:14:03
 tags:
     - javascript
 ---
-### 1.摘要
+### 摘要
 虽然javascript数据类型少，但是功能还是挺多的~
 比如Array类型！又可以当栈又可以当队列^o^
 而且Array还有一个特点是：一个Array里面的每一项都可以是不同的类型~也算是一个有利有弊的特性吧~
-### 2.能当栈又能当队列
+### 能当栈又能当队列
 为了实现这一点，javascript的Array有4个方法
 分别是pop,push,shift,unshift。
 <!-- more -->

@@ -1,7 +1,7 @@
 ---
 title: mac基本指令无法识别。。。
 date: 2016-11-26 14:54:42
-tags: 
+tags:
 	- mac
 ---
 **********************************
@@ -16,12 +16,12 @@ tags:
 然后我就慌慌张张的谷歌了一波  还好有相同遭遇的小伙伴分享经验~~
 ************************************
 ### 解决方法
-##### 1 在终端输入
+#### 在终端输入
 ```bash
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 ```
 执行完之后那些指令就暂时可用啦~不过还要赶紧改一下.bash_profile
-##### 2 在终端输入
+#### 在终端输入
 ```bash
 open -e ~/.bash_profile
 ```
@@ -29,4 +29,4 @@ open -e ~/.bash_profile
 ```bash
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 ```
-然后保存~就好啦~~  ^ ^ 
+然后保存~就好啦~~  ^ ^

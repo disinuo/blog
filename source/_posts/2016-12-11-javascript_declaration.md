@@ -7,7 +7,7 @@ tags:
 ---
 ### 更新日志
 2017-01-24 发现名字不太合适。。。改个名字。。。
-
+**************
 发现这一块很迷啊。。
 首先来看下问题~
 ```javascript
@@ -26,8 +26,8 @@ bar();
 <!--more-->
 其实主要是搞明白第一个为什么是undefined，这个搞明白了后面那个执行完if语句自然就是10了。
 **********************************
-### 1.JavaScript的声明
-1.1函数声明&变量声明
+### JavaScript的声明
+#### 函数声明&变量声明
 形如 `function foo() {}`和`var foo`的分别是函数声明和变量声明。
 而JavaScript解释器会把这些声明，统一移到该代码所在作用域的顶部(参考 [ben cherry的JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html))
 比如如下代码

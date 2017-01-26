@@ -4,24 +4,24 @@ date: 2016-12-14 16:03:43
 tags:
     - git
 ---
-### 1.前言
+### 前言
 因为怕代码被我玩坏。。。一直没用过branch。。。今天查了一波~把觉得比较有用的知识整理下~
 <!--more-->
-### 2.创建分支
+### 创建分支
 ```bash
 git branch dev    #创建一个名叫dev的分支，dev不用加引号
 git checkout dev  #切换到dev分支
 #上述两步可以合并为一步
 git checkout -b dev #创建并切换到dev分支
 ```
-### 3.查看分支
+### 查看分支
 ```bash
 git branch  #可以查看所有分支
 #会看到如下输出，*代表当前处于那个分支下
 * dev
 master
 ```
-### 4.在分支上提交
+### 在分支上提交
 过程与普通的提交一样
 比如对README.md进行了修改，想在dev分支上提交
 首先要保证切换到分支下 `git checkout dev`
@@ -29,7 +29,7 @@ master
 git add README.md
 git commit -m "branch test"
 ```
-### 5.切换分支
+### 切换分支
 执行完4 就完成了在dev分支上的提交啦
 现在我们可以`git checkout master`切换回主分支看看~
 然后就会发现README.me是修改前的样子~~~
@@ -47,7 +47,7 @@ git commit -m "branch test"
   - 对于工作区不是clear的（就是有改动没有commit），工作区代码会将这些没commit的代码显示出来~
   所以上面我玩的不亦乐乎的分支切换[捂脸]就是因为改动都commit了~工作区clear了~两个分支就会分别显示各自最后一次commit的代码啦!^ ^
 
-### 6.push新分支
+### push新分支
 接下来！如果想push这个新的分支以至于在github可以看到，就要执行这个带参数的push
 ```bash
   git push --set-upstream origin dev  
@@ -55,7 +55,7 @@ git commit -m "branch test"
   # fatal: The current branch test has no upstream branch.
   # To push the current branch and test the remote as upstream
 ```
-### 7.分支合并
+### 分支合并
 我发现好像大部分情况还是本地保留分支的，只是在分支上进行开发，然后合并到主分支上。
 所以分支的合并显得尤为重要~而且分支的合并还是有不同方式的
 【感觉再写有点长了，想看分支的合并我们下一篇见吧~^ ^】
