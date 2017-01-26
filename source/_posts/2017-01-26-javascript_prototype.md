@@ -68,7 +68,7 @@ person1.sex='Female';
 console.log(person1.sex);//Female
 console.log(person2.sex);//Male
 ```
-改person1的性别，person2的没有改啊，这是怎么回事。
+改person1的性别，person2的没有变啊，这是怎么回事。
 这就涉及到了javascript神奇的属性访问与创建的原则。
 ### 属性的访问与创建机制
 - 创建
@@ -98,6 +98,13 @@ Person
 Cannot read property 'push' of undefined
 ```
 就是因为friends是undefined所以报错了嘛~
+而如果接着上面的代码再加几行
+```javascript
+person1.friends=['Lihua'];
+console.log(person1.friends);//Lihua
+console.log(person2.friends);//Lihua,Oliver,Selena
+```
+看~果然 `赋值`就会自动创建属性啦~
 
 有点长了，`构造器`以及`原型和构造器比较`的部分放在下一篇吧 ^ ^~
 ***************
