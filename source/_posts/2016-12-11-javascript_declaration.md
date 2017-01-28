@@ -6,7 +6,10 @@ tags:
     - javascript
 ---
 ### 更新日志
-2017-01-24 发现名字不太合适。。。改个名字。。。
+|日期|描述
+|:---|:---
+|2017-01-24 |发现名字不太合适。。。改个名字。。。
+|2017-01-28 |原来那个现象叫“变量提升”！~~
 **************
 发现这一块很迷啊。。
 首先来看下问题~
@@ -29,7 +32,7 @@ bar();
 ### JavaScript的声明
 #### 函数声明&变量声明
 形如 `function foo() {}`和`var foo`的分别是函数声明和变量声明。
-而JavaScript解释器会把这些声明，统一移到该代码所在作用域的顶部(参考 [ben cherry的JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html))
+而JavaScript解释器会把这些声明，统一移到该代码所在作用域的顶部---这个现象叫`变量提升`(参考 [ben cherry的JavaScript Scoping and Hoisting](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html))
 比如如下代码
 ```javascript
 function foo() {
