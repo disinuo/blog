@@ -70,6 +70,8 @@ person1.hobbies的push仅对person1产生了影响。
 3.  方法放在原型里：
 这个跟上一条是一样的道理，就像java里面，类的方法一样，每个对象都是一样的呀~
 也就没有每个实例都独自持有一份的必要啦。
+
+本文涉及的源码可以[戳这里^ ^](https://github.com/disinuo/Demo_for_learningJS)（还包含javascript系列的其他部分的源码哦）
 ***************
 参考
 [MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)

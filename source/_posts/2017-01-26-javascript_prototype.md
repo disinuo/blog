@@ -107,6 +107,7 @@ console.log(person2.friends);//Lihua,Oliver,Selena
 看~果然 `赋值`就会自动创建属性啦~
 
 有点长了，`构造器`以及`原型和构造器比较`的部分放在下一篇吧 ^ ^~
+本文涉及的源码可以[戳这里^ ^](https://github.com/disinuo/Demo_for_learningJS)（还包含javascript系列的其他部分的源码哦）
 ***************
 参考
 [MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
