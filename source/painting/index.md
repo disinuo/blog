@@ -14,7 +14,7 @@ photos:
   <div><img src="./NP.jpeg" alt="Natalie Portman！！" /></div>
   <div><img src="./horse_girl.jpeg" alt="马和女孩" /></div>
 
-  <div><img src="./Titanic.jpeg"  alt="Jack&Rose" /></div>
+  <div><img src="./Titanic.png"  alt="Jack&Rose" /></div>
   <div><img src="./horse.jpeg"  alt="帅气的马"  /></div>
   <div><img src="./AGirl.jpeg" alt="一个像周迅的女人" /></div>
 </div>
