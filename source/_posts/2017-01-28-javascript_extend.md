@@ -1,9 +1,14 @@
 ---
 title: javascript之继承
 date: 2017-01-28 07:57:03
+updated: 2017-01-28
 tags:
     - javascript
+<!-- photos:
+  - /image/2016-09-28-forceDelete/alert_delete.png -->
 ---
+
+
 ### 前言
 说明一下，本文提到的‘类’，不是java、C里那种‘类’~
 javascript里是没有类的概念的，只是为了方便表达~将一个包含构造器、原型的变量叫做‘类’。
