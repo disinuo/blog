@@ -1,0 +1,20 @@
+
+个人信息：
+  个人网站：disinuo.me
+  Github：
+  南京大学软件学院大三在读生
+语言：
+  熟悉javascript，html，css，java，sql
+  较熟悉C、C++
+  了解php、python
+经历：
+  大一到大三，在完成学校布置的项目时，在组内一直负责前端
+  用hexo搭建了自己的博客disinuo.me，并对主题进行改进，添加了评论、访客、打赏、站点统计等功能。
+  平时专业上遇到的坑都会写博客记录下来~
+写的文章：
+ https://disinuo.me/2017/01/26/2017-01-26-javascript_prototype/
+ https://disinuo.me/2017/01/28/2017-01-28-javascript_extend/
+爱好：
+经常看【前端大全】等跟专业有关的公众号推送的文章
+逛github
+偶尔逛stackoverflow之类的论坛

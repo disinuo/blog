@@ -18,7 +18,7 @@ word_count: true
 duoshuo_shortname: disinuo # 你填写在多说域名中的值
 # 多说分享服务，必须与多说评论同时使用
 duoshuo_share: true
-# search 
+# search
 search:
   path: search.xml
   field: post
@@ -82,7 +82,7 @@ theme: next
 social_title: 关于我
 social:
   GitHub: https://github.com/disinuo
-  Email: /about
+  Email: mailto:dsn960401@gmail.com
   Twitter: https://twitter.com/di_sinuo
 #为了利于google和百度抓取网站
 sitemap:
