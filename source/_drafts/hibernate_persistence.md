@@ -153,7 +153,17 @@ SAVING} MANAGED和READ_ONLY：update时，将游离态对象转换为持久态�
 MANAGED，否则为READ_ONLY。DELETED：delete时，首先把EntityDeleteAction放入ActionQueue队列，但未执行，并将该Entity对应的EntityEntry的Status标识为DELETED。
 表示已标示为删除，但未真正执行操作。GONE:当flush和commit时，EntityDeleteAction真正得到执行，当执行完之后，将EntityEntry的Status标识为GONE。SAVING：执行保存操作时，需要为Entity在StatefulPersistenceContext中创建一个EntityEntry，并将其Status标识为SAVING。LOADING:数据Load时的标识。 知识准备 6瞬时态、游离态、持久态、删除态的判断逻辑：1）如果Entity在StatefulPersistenceContext中存在相应的EntityEntry对象，且EntityEntry的Status为DELETED,那么判断为删除态（DELETED）；2）如果Entity在StatefulPersistenceContext中存在相应的EntityEntry对象，且EntityEntry的Status不为DELETED,那么判断为持久态（PERSISTENT）；3）如果Entity在StatefulPersistenceContext中不存在相应的EntityEntry对象，如果Entity关键字值为null或与hbm文件中id元素配置的unsaved-value
 相等，那么判断为瞬时态（TRANSIANT）；4）如果Entity在StatefulPersistenceContext中不存在相应的EntityEntry对象，除3）外，否则判断为游离态（DETACHED）。
-
+```java
+protected Serializable performSave(Object entity,
+                                   Serializable id,
+                                   EntityPersister persister,
+																	 // useIdentityColumn - Is an identity column being used?
+                                   boolean useIdentityColumn,
+                                   Object anything,
+                                   EventSource source,
+                                   boolean requiresImmediateIdAccess);
+Prepares the save call by checking the session caches for a pre-existing entity and performing any lifecycle callbacks.
+```
 ------------
 参考
 
@@ -162,3 +172,4 @@ MANAGED，否则为READ_ONLY。DELETED：delete时，首先把EntityDeleteAction
 [stackoverflow关于persistence context的解释](http://stackoverflow.com/questions/19930152/what-is-persistence-context)
 [Coin163
 Hibernate 专题研究系列（一） save/update/saveOrUpdate等方法学习](http://amp.coin163.com/it/5624610946476426335)
+[hibernate的get和load](https://www.mkyong.com/hibernate/different-between-session-get-and-session-load/)
