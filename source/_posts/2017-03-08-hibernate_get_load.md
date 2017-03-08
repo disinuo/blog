@@ -83,7 +83,7 @@ get和load都调用这个onLoad，并且二者的LoadEvent一模一样
 ```java
 // 63。
 public void onLoad(LoadEvent event, LoadType loadType) throws HibernateException {
-   EntityPersister persister = this.getPersister(event);//现在知道它是什么实体类了
+   EntityPersister persister = this.getPersister(event);
    this.doOnLoad(persister, event, loadType);
  }
 // 86。两者的persister,event都相同。只有loadType不同
@@ -110,7 +110,7 @@ private Object proxyOrLoad(LoadEvent event, EntityPersister persister, EntityKey
   if(!persister.hasProxy()) {
     //   hasProxy() Determine whether this entity supports dynamic proxies.
     // 不支持代理的话，就老实的去调用load
-      return this.load(event, persister, keyToLoad, options);//调用上面那个load-->doLoad
+      return this.load(event, persister, keyToLoad, options);//等下下面会提到这个方法
   } else {
     // 支持代理
       PersistenceContext persistenceContext = event.getSession().getPersistenceContext();
