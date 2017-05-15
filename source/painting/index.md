@@ -6,7 +6,7 @@ photos:
 ---
 {%cq%}我画的画 ^ ^ ~【不要盗图哦！~】{% endcq %}
 <div class="painting-container" >
-<!-- ![一朵大玫瑰](./flower.jpeg =50*50) -->
+  <div><img src="./gate.jpg"  alt="第一次画油画" /></div>
   <div><img src="./flower.jpeg"  alt="一朵大玫瑰" /></div>
   <div><img src="./villa.jpeg"  alt="别墅"  /></div>
   <div><img src="./captain.png" alt="德普！！" /></div>

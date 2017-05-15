@@ -22,7 +22,3 @@ date: 2017-01-25 22:52:53
 因为很多次，以为自己会了准备开始写博客的时候，还是要不断查好多资料，就怕自己哪里写的不对，哪里理解的还是有点问题。
 所以写博客可以用来帮助自己加深理解吧~
 觉得不会的东西实在太多。。。努力吧！~
-
-
-### 最近访客
-<div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
