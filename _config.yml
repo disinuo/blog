@@ -14,10 +14,6 @@ timezone: #这是干嘛的
 avatar: /avatar.png
 # 开启字数统计
 word_count: true
-# 多说评论功能
-duoshuo_shortname: disinuo # 你填写在多说域名中的值
-# 多说分享服务，必须与多说评论同时使用
-duoshuo_share: true
 # search
 search:
   path: search.xml
