@@ -2,6 +2,8 @@
 title: preparedStatement 报错 Parameter index out of range (1 > number of parameters, which is 0)
 date: 2016-12-18 23:26:43
 tags:
+    - java
+    - j2ee
     - sql
     - jdbc
 ---

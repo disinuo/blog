@@ -4,6 +4,7 @@ date: 2017-03-07 23:35:37
 updated: 2017-03-07
 tags:
     - j2ee
+    - java
     - hibernate
 ---
 ## 前言

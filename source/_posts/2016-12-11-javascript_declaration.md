@@ -2,7 +2,6 @@
 title: JavaScript 变量声明
 date: 2016-12-11 22:38:42
 tags:
-    - web
     - javascript
 ---
 ### 更新日志
