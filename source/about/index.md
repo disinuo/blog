@@ -3,7 +3,7 @@ layout: about
 title: 关于
 date: 2017-01-25 22:52:53
 ---
-  <div style="text-align:left;color: #ccc;font-size:14px;">更新于2017-2-4</div>
+  <div style="text-align:left;color: #ccc;font-size:14px;">更新于2017-5-25</div>
 
 ### 个人简介
 > 姓名：邸思诺
@@ -14,6 +14,7 @@ date: 2017-01-25 22:52:53
 
 ### 联系我
 > <span class="fa fa-envelope"></span>  dsn960401@gmail.com
+**在下面留言我们交换友链呀~~^ ^**
 
 ### 建站初衷
 2016-12-11在室友的提议下搭了这个博客。刚开始觉得很是神奇啊~而且有一个自己畅所欲言并且整个网站都随便改的地方，就一个字，爽！

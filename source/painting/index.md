@@ -1,7 +1,6 @@
 ---
 title: 画画
 type: "painting"
-comments: false
 photos:
 ---
 {%cq%}我画的画 ^ ^ ~【不要盗图哦！~】{% endcq %}
