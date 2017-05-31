@@ -93,13 +93,13 @@ private @NonNull View createViewFromResource(@NonNull LayoutInflater inflater, i
 而这7次调用的`if(converView==null)`都是等于`true`的
 - 当用户滚动屏幕，导致最上面的item滑出屏幕，第8个item进入屏幕时，`getView`会被调用一次。
 而这次`if`判断等于false，因为7个view都已经存在了，所以这次getView的工作是把第8条数据的值赋值给第一个view并返回
-### 总结
+
+> ### 总结
 其实本来想找一下源码哪里调用了getView的。。但是失败了。。。看来看源码的功力还要修炼很久啊~~
+
 ----------
 参考
 [Android官方文档](https://developer.android.com/guide/components/activities.html)
-[StackOverFlow---Linear Layout and weight in Android
-](https://stackoverflow.com/questions/2698817/linear-layout-and-weight-in-android)
-[](https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView)
+[Using-an-ArrayAdapter-with-ListView](https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView)
 [Udacity课程](https://www.youtube.com/watch?v=2lcoB5-PCCw)
-[StackOverFlow](https://stackoverflow.com/questions/10160475/when-getview-in-arrayadapter-is-called)
+[StackOverFlow--when-getview-in-arrayadapter-is-called](https://stackoverflow.com/questions/10160475/when-getview-in-arrayadapter-is-called)
