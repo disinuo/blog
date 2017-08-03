@@ -98,3 +98,6 @@ deploy:
   type: git
   repo: https://github.com/disinuo/disinuo.github.io
   branch: master
+
+# 来必力的id（韩国评论插件）
+livere_uid: MTAyMC8yOTk1MS82NTE2

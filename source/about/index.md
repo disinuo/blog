@@ -1,5 +1,4 @@
 ---
-layout: about
 title: 关于
 date: 2017-01-25 22:52:53
 ---

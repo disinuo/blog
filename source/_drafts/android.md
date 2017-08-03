@@ -1,5 +1,5 @@
 ---
-title: Android-Adapter工作原理【含源码分析】
+title: Android
 date: 2017-05-25 16:51:42
 tags:
     - java
@@ -7,6 +7,9 @@ tags:
 ---
 ### 坑s
 <!-- more -->
+### HttpURLConnection的报错
+#### 405 MethodNotFound
+看看是不是GET写成了POST，可能api服务那边不匹配POST
 #### 从输入框获取输入的值的时候要记得`toString`啊啊啊，不然啥都拿不到啊啊啊啊
 ```java
 public class MyActivity extends AppCompatActivity {
