@@ -1,7 +1,6 @@
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: Disinuo的博客
 subtitle: Better Me ^ ^
@@ -26,6 +25,14 @@ enforce_ssl: disinuo.me   # without any protocol
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+# links
+links:
+  丹妮妮: https://chendanni.github.io/
+  陈云龙大神~: http://www.cylong.com/
+  toast: http://dzmtoast.top
+  苏易北: https://abelsu7.top/
+  runningapple: http://runningapple.com/
 
 # Directory
 source_dir: source
@@ -80,17 +87,14 @@ social:
   GitHub: https://github.com/disinuo
   Email: mailto:dsn960401@gmail.com
   Twitter: https://twitter.com/di_sinuo
-  Book: https://www.gitbook.com/@disinuo
+  Radio: http://music.163.com/#/djradio?id=526854581
+
 #为了利于google和百度抓取网站
 sitemap:
     path: sitemap.xml
 baidusitemap:
     path: baidusitemap.xml
-# links
-links:
-  丹妮妮: https://chendanni.github.io/
-  陈云龙大神~: http://www.cylong.com/
-  toast: http://dzmtoast.top
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

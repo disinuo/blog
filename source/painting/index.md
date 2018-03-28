@@ -7,6 +7,7 @@ photos:
 <div class="painting-container" >
   <div><img src="./gate.jpg"  alt="第一次画油画" /></div>
   <div><img src="./flower.jpeg"  alt="一朵大玫瑰" /></div>
+  <div><img src="./miley.jpg"  alt="Miley Cyrus" /></div>
   <div><img src="./villa.jpeg"  alt="别墅"  /></div>
   <div><img src="./captain.png" alt="德普！！" /></div>
   <div><img src="./littleGirl.jpeg" alt="拍照的小女孩" /></div>
