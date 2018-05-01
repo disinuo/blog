@@ -6,7 +6,7 @@ title: Disinuo的博客
 subtitle: Better Me ^ ^
 description: 做更好的自己~
 author: Disinuo
-language: zh-Hans
+language: zh-CN
 timezone: #这是干嘛的
 
 # Avatar
@@ -80,7 +80,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: pure #next
 # social
 social_title: 关于我
 social:

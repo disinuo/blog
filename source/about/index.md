@@ -1,5 +1,10 @@
 ---
 title: 关于
+
+<!-- comments: false -->
+permalink: false
+sidebar: none
+<!-- layout: about -->
 date: 2017-01-25 22:52:53
 ---
   <div style="text-align:left;color: #ccc;font-size:14px;">更新于2017-5-25</div>
@@ -10,6 +15,13 @@ date: 2017-01-25 22:52:53
 > 生日：1996年生
 > 身份：南京大学14级软件学院本科生
 > 爱好：爱好广泛~喜欢唱歌、听歌、画画、弹弹吉他、跑跑步、看看电影什么的~
+
+
+### 网易云电台
+原链接[戳这里~ dsn的英语经典台词练习](https://music.163.com/#/djradio?id=526854581)
+每周三更
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=420 height=520 src="//music.163.com/outchain/player?type=4&id=526854581&auto=0&height=430"></iframe>
+
 
 ### 联系我
 > <span class="fa fa-envelope"></span>  dsn960401@gmail.com
