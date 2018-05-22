@@ -2,7 +2,8 @@
 title: 音乐
 type: "music"
 ---
-{%cq%}我唱的歌 ^ ^ ~{% endcq %}
+<font color=#DCACAC>__我唱的歌 ^ ^ ~__</font>
+
 |歌名|原唱
 |:--- |:---
 |[失落沙洲](http://kg.qq.com/share.html?s=qOBlU5qtZjMQsq2e)|徐佳莹

@@ -3,7 +3,8 @@ title: 画画
 type: "painting"
 photos:
 ---
-{%cq%}我画的画 ^ ^ ~【不要盗图哦！~】{% endcq %}
+<font color=#DCACAC>__我画的画 ^ ^ ~【不要盗图哦！~】__</font>
+
 <div class="painting-container" >
   <div><img src="./gate.jpg"  alt="第一次画油画" /></div>
   <div><img src="./flower.jpeg"  alt="一朵大玫瑰" /></div>
