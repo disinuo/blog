@@ -1,6 +1,7 @@
 ---
 title: javascript迷之闭包
 date: 2017-01-23 20:42:03
+updated: 2017-01-23 20:42:03
 tags:
     - javascript
 ---

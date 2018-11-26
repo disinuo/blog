@@ -1,6 +1,7 @@
 ---
 title: javascript 原型与构造器之‘构造器’
 date: 2017-01-26 23:18:03
+updated: 2017-01-26 23:18:03
 tags:
     - javascript
 ---

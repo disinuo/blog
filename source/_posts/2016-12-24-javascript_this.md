@@ -1,6 +1,7 @@
 ---
 title: javascript之this的绑定
 date: 2016-12-24 19:38:03
+updated: 2016-12-24 19:38:03
 tags:
     - javascript
 ---

@@ -1,6 +1,7 @@
 ---
 title: javascript关键字new
 date: 2017-01-10 15:38:03
+updated: 2017-01-10 15:38:03
 tags:
     - javascript
 ---

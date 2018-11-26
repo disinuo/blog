@@ -1,6 +1,7 @@
 ---
 title: Android：AsyncTask用法
 date: 2017-06-13 19:59:16
+updated: 2017-06-13 19:59:16 
 tags:
     - android
 ---
@@ -42,7 +43,7 @@ public class AsyncTaskExample extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         _initTask = new InitTask();
-        
+
         //这样就可以启动这个task啦
         _initTask.execute();
     }

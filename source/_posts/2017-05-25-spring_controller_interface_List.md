@@ -1,6 +1,7 @@
 ---
 title: spring的controller接口参数类型List<MyClass>报错
 date: 2017-05-25 10:35:37
+updated: 2017-05-25 10:35:37
 tags:
     - spring
     - java
