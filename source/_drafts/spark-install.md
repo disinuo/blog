@@ -16,15 +16,18 @@ scala>
  wget http://mirrors.shu.edu.cn/apache/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
 # 3.解压
 sudo mkdir /usr/local/spark
-sudo tar -zxvf spark-2.4.0-bin-hadoop2.7.tgz -C /usr/local/spark/
-
+sudo tar -zxvf spark-2.4.0-bin-hadoop2.7.tgz -C /usr/local/
+sudo mv /usr/local/spark-2.4.0-bin-hadoop2.7 /usr/local/spark
 # 4.路径配置
-
+#找一下scala被安装在哪
+whereis scala
+#修改配置文件
 sudo vim ~/.bashrc #/etc/profile也可以，/etc/profile是全局的
 
 #然后在文件最后添加如下代码
-export SPARK_HOME=/usr/local/spark/spark-2.4.0-bin-hadoop2.7/
-export PATH=$PATH:${SPARK_HOME}/bin
+export SPARK_HOME=/usr/local/spark/
+export SCALA_HOME=/usr/share/scala-2.11
+export PATH=$PATH:${SPARK_HOME}/bin:${SCALA_HOME}/bin
 
 #然后立刻更新文件
 source ~/.bashrc
@@ -52,7 +55,7 @@ scala>
 '`
 #2.用自带函数测试，算一下pi
 
-cd /usr/local/spark/spark-2.4.0-bin-hadoop2.7/bin/
+cd /usr/local/spark/bin/
 
 ./run-example SparkPi 5
 
@@ -68,17 +71,23 @@ Pi is roughly 3.1497662995325992
 ## spark配置
 ```shell
 #1.进入spark目录
-cd /usr/local/spark/spark-2.4.0-bin-hadoop2.7/conf
+cd /usr/local/spark/conf
 #2.从配置模板copy创建配置文件
 cp spark-env.sh.template spark-env.sh
 #3.在spark-env.sh末尾添加下面配置
 # export SCALA_HOME=/home/spark/workspace/scala-2.10.4
+
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export SCALA_HOME=/usr/share/scala-2.11/
 export HADOOP_HOME=/usr/local/hadoop
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 SPARK_MASTER_IP=master
-SPARK_LOCAL_DIRS=/usr/local/spark/spark-2.4.0-bin-hadoop2.7
+SPARK_MASTER_PORT=7077
+SPARK_MASTER_HOST=master
+SPARK_LOCAL_IP=master
+SPARK_LOCAL_DIRS=/usr/local/spark
 SPARK_DRIVER_MEMORY=1G
+
 #保存的时候会提示此文件是readonly，退出的时候用`:wq!`就可以啦~
 
 #4.配置slave
@@ -92,8 +101,11 @@ xx.xx.xx.xx master
 #因为我们的配置文件实在/usr/local下的，master没有权限写入，
 #因此先发送到临时路径，再在slave服务器下将其转移到目标路径
 #==在master上操作
-sudo scp -r /usr/local/spark/spark-2.4.0-bin-hadoop2.7/conf/spark-env.sh ubuntu@slave1:~/temp_conf.sh
+sudo scp -r /usr/local/spark/conf/spark-env.sh ubuntu@slave1:~/temp_conf.sh
 #==在slave1上操作
-sudo mv temp_conf.sh /usr/local/spark/spark-2.4.0-bin-hadoop2.7/conf/spark-env.sh
+sudo mv temp_conf.sh /usr/local/spark/conf/spark-env.sh
 
 ```
+---
+================================
+## 配置spark用python的编程环境
