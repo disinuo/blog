@@ -100,8 +100,9 @@ baidusitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/disinuo/disinuo.github.io
+  repo: https://github.com/disinuo/disinuo.github.io.git
   branch: master
+  token: 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
 
 # 来必力的id（韩国评论插件）
 livere_uid: MTAyMC8yOTk1MS82NTE2
